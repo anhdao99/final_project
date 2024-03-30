@@ -141,6 +141,10 @@ p{
     border: #db3a3a 3px solid;
 }
 
+.team_week h3{
+    text-align: center;
+}
+
 /* Styling Driver of the Week Grid card */
 .driver_week{
     display: grid;
@@ -158,6 +162,10 @@ p{
     transform: scale(1.01);
     transition: 0.3s;
     border: #2470b8 3px solid;
+}
+
+.driver_week h3{
+    text-align: center;
 }
 
 /* Styling Explore Teams section */
