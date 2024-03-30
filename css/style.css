@@ -1,0 +1,1042 @@
+/* style skip to main content */
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    z-index: 99999999;
+}   
+
+body{
+    font-family: 'Poppins', 'Century Gothic', Arial, sans-serif;
+}
+
+/* styling header and nav items */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
+    height: 125px;
+    position: sticky;
+    z-index: 100000;
+    top: 0;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+}
+
+#logo{
+    margin: 10px 0px 10px 10px;
+    max-width: 125px;
+}
+
+nav{
+    background-color: #ffffff;
+    padding: 25px 10px 10px 0px;
+    height: 125px;
+}
+
+.nav_links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav_links li{
+    padding: 2px 0px 2px 0px;
+}
+
+.nav_links a{
+    font-weight: 700;
+    color: #d61d1d;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nav_links a:hover{
+    color: #f87777;
+    transition: 0.2s;
+}
+
+#active{
+    color: #8a1212;
+    text-decoration: underline; 
+    font-weight: 900;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
+}
+
+#navbar{
+    transition: top 0.4s;
+}
+/* styling main, headings, paragraphs */
+main{
+    margin: 5% 10%;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    color: #d61d1d;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 800;   
+    padding-bottom: 15px;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: 800;
+    font-style: italic ;
+    padding-bottom: 15px;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+/* Styling top banner */
+.top_p{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.top_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling Team of the Week Grid card */
+.team_week{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    padding: 20px 10px 10px 10px;
+    margin-bottom: 100px;
+    transition: 0.3s;
+}
+
+.team_week:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+    border: #db3a3a 3px solid;
+}
+
+/* Styling Driver of the Week Grid card */
+.driver_week{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    padding: 20px 10px 10px 10px;
+    margin-bottom: 100px;
+    transition: 0.3s;
+}
+
+.driver_week:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+    border: #2470b8 3px solid;
+}
+
+/* Styling Explore Teams section */
+.explore_teams h3{
+    text-align: center;
+    font-size: 20px;
+}
+
+.explore_teams img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98%;
+}
+
+/* Styling Mercedes card */
+.merc_team_card{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 20px 5px 10px 5px;
+    margin-bottom: 50px;
+    transition: 0.2s;
+}
+
+.merc_team_card:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+    opacity: 0.8;
+    border: #00D2BE 3px solid;
+}
+
+/* Styling red bull card */
+.redbull_team_card{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 20px 5px 10px 5px;
+    margin-bottom: 50px;
+    transition: 0.2s;
+}
+
+.redbull_team_card:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+    border: #0c207c 3px solid;
+    opacity: 0.8;
+}
+
+/* Styling mclaren card */
+.mclaren_team_card{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 20px 5px 10px 5px;
+    margin-bottom: 50px;
+    transition: 0.2s;
+}
+
+.mclaren_team_card:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+    border: #fa8b23 3px solid;
+    opacity: 0.8;
+}
+
+/* Styling aston martin card */
+.aston_team_card{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 20px 5px 10px 5px;
+    margin-bottom: 50px;
+    transition: 0.2s;
+}
+
+.aston_team_card:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+    border: #00594f 3px solid;
+    opacity: 0.8;
+}
+
+/* Styling button */
+a{
+    grid-column: 1 / 3;
+    text-decoration: none;
+}
+
+button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #db3a3a;
+    color: #ffffff;
+    height: 50px;
+    width: 200px;
+    font-family: 'Poppins', 'Century Gothic', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover{
+    background-color: #f74e4e;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+/* Style driver names in explore_driver cards */
+.explore_drivers h3{
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Style driver photos */
+.explore_drivers img{
+    border-radius: 22px 22px 0 0;
+}
+
+/* Set 2 column grid for driver cards */
+.explore_drivers{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    grid-column-gap: 25px;
+}
+
+/* Style hamilton card */
+.hamilton_card{
+    display: grid;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    margin-bottom: 50px;
+    transition: 0.2s;
+    justify-items: center;
+}
+
+.hamilton_card:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+    border: #00D2BE 3px solid;
+    opacity: 0.8;
+}
+
+/* Style carlos card */
+.carlos_card{
+    display: grid;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    margin-bottom: 50px;
+    transition: 0.2s;
+    justify-items: center;
+}
+
+.carlos_card:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+    border: #db3a3a 3px solid;
+    opacity: 0.8;
+}
+
+/* Style lando card */
+.lando_card{
+    display: grid;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    margin-bottom: 50px;
+    transition: 0.2s;
+    justify-items: center;
+}
+
+.lando_card:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+    border: #fa8b23 3px solid;
+    opacity: 0.8;
+}
+
+/* Style bottas card */
+.bottas_card{
+    display: grid;
+    justify-content: center;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    margin-bottom: 50px;
+    transition: 0.2s;
+    justify-items: center;
+}
+
+.bottas_card:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+    border: #26d60f 3px solid;
+    opacity: 0.8;       
+}
+
+/* styling explore driver button */
+.explore_drivers button{
+    grid-column: 1 / 3;
+}
+
+/* styling all team cards */
+.team_card{
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 20px 5px 10px 5px;
+    margin: 50px 0;
+    transition: 0.3s;
+    box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.07);
+}
+
+.team_card h3{
+    font-size: 20px;
+}
+
+.team_card:hover{
+    transform: scale(1.02);
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+/* styling border colors for individual teams */
+#redbull:hover{
+    border: #082d62 4px solid;
+}
+
+#ferrari:hover{
+    border: #dc0000 4px solid;
+}
+
+#mclaren:hover{
+    border: #ff8700 4px solid;
+}
+
+#mercedes:hover{
+    border: #00d2be 4px solid;
+}
+
+#aston:hover{
+    border: #006f62 4px solid;
+}
+
+#williams:hover{
+    border: #4f92df 4px solid;
+}
+
+#alpine:hover{
+    border: #2b85c9 4px solid;
+}
+
+#rb:hover{
+    border: #7b96e0 4px solid;
+}
+
+#sauber:hover{
+    border: #26d60f 4px solid;
+}
+
+#haas:hover{
+    border: #adadad 4px solid;
+}
+
+/* styling a elements for clikable divs */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+
+}
+
+/* re-styling nav elements */
+.nav_links a{
+    font-weight: 700;
+    color: rgb(214, 29, 29);
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nav_links a:hover{
+    color: rgb(248, 119, 119);
+    transition: 0.2s;
+}
+
+#active{
+    color: rgb(138, 18, 18);
+    text-decoration: underline; 
+    font-weight: 900;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
+}
+
+/* setting up grid for drivers */
+.drivers{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    grid-gap: 25px;
+    margin: 50px 0;
+}
+
+/* styling driver cards */
+.driver_card{
+    display: grid;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    justify-items: center;
+    box-shadow: 0px 5px 8px 2px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+/* .driver_card:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+    box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.1);
+    opacity: 0.8;
+} */
+
+.driver_card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    opacity: 0.8;
+}
+
+.driver_card img{
+    border-radius: 22px 22px 0 0;
+}
+
+/* styling borders for drivers during hover */
+
+#carlos:hover, #charles:hover{
+    border: #dc0000 3px solid;
+}
+
+#hamilton:hover, #george:hover{
+    border: #00d2be 3px solid;
+}
+
+#max:hover, #checo:hover{
+    border: #07377c 3px solid;
+}
+
+#lando:hover, #oscar:hover{
+    border: #ff8700 3px solid;
+}
+
+#fernando:hover, #stroll:hover{
+    border: #006f62 3px solid;
+}
+
+#albon:hover, #logan:hover{
+    border: #4f92df 3px solid;
+}
+
+#gasly:hover, #ocon:hover{
+    border: #2b85c9 3px solid;
+}
+
+#daniel:hover, #yuki:hover{
+    border: #7b96e0 3px solid;
+}
+
+#bottas:hover, #zhou:hover{
+    border: #26d60f 3px solid;
+}
+
+#kmag:hover, #hulk:hover{
+    border: #adadad 3px solid;
+}
+
+/* Media query for tablet displays */
+@media (min-width:600px) {
+    /* styling skip button */
+    .skip {
+        position: absolute;
+        top:-40px;
+        margin-left: 10px;
+    }
+    
+    .skip:focus {
+        top: 10px;
+        transition: 0.2s;
+    }
+    
+    /* styling header and nav */
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 10px;
+        height: 100px;
+        position: sticky;
+        box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    }
+    
+    #logo{
+        margin-left: 20px;
+        max-width: 100px;
+    }
+    
+    nav{
+        background-color: #ffffff;
+        padding: 10px 10px 10px 0px;
+        height: 50px;
+    }
+    
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .nav_links li{
+        padding: 2px 20px 2px 20px;
+    }
+    
+    .nav_links a{
+        font-weight: 700;
+        color: rgb(214, 29, 29);
+        font-size: 18px;
+        text-decoration: none;
+    }
+    
+    .nav_links a:hover{
+        color: rgb(248, 119, 119);
+        transition: 0.2s;
+    }
+    
+    #active{
+        color: rgb(138, 18, 18);
+        text-decoration: underline; 
+        font-weight: 900;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 3px;
+    }
+    
+    main{
+        margin: 5% 15%;
+    }
+    
+    h1{
+        font-size: 30px;
+        font-weight: 900;
+        padding-bottom: 20px;
+    }
+    
+    h2{
+        font-size: 25px;
+        font-weight: 800;   
+        padding-bottom: 15px;
+    }
+    
+    h3{
+        font-size: 20px;
+        font-weight: 800;
+        font-style: italic ;
+        padding-bottom: 15px;
+    }
+    
+    p{
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    
+    /* styling top banner */
+    .top_p{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    
+    .top_page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* styling team of the week */
+    .team_week{
+        display: grid;
+        justify-items: center;
+        background-color: #ffffff;
+        box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.1);
+        border-radius: 25px;
+        padding: 20px 10px 10px 10px;
+        margin-bottom: 100px;
+        transition: 0.3s;
+    }
+    
+    .team_week:hover{
+        transform: scale(1.01);
+        transition: 0.3s;
+        border: #db3a3a 3px solid;
+    }
+
+    .description p{
+        line-height: 30px;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 15px;
+        color: #777777;
+    }
+
+    .team_week h3{
+        text-align: center;
+    }
+    
+    /* styling driver of the week */
+    .driver_week{
+        display: grid;
+        justify-items: center;
+        background-color: #ffffff;
+        box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.1);
+        border-radius: 25px;
+        padding: 20px 10px 10px 10px;
+        margin-bottom: 100px;
+        transition: 0.3s;
+    }
+
+    .driver_week img{
+        max-height: 200px;
+    }
+    
+    .driver_week:hover{
+        transform: scale(1.01);
+        transition: 0.3s;
+        border: #2470b8 3px solid;
+    }
+
+    .description{
+        margin: auto;
+    }
+
+    /* styling explore teams */
+    .explore_teams{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-gap: 25px;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .explore_teams h2{
+        grid-column: 1 / 3;
+    }
+
+    .merc_team_card, .redbull_team_card, .mclaren_team_card, .aston_team_card{
+        margin-bottom: 0;
+    }
+
+    /* styling "see more teams" button */
+    .explore_teams button{
+        grid-column: 1 / 3;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: #db3a3a;
+        color: #ffffff;
+        height: 50px;
+        width: 300px;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    .explore_teams button:hover{
+        background-color: #f74e4e;
+        transform: scale(1.01);
+        transition: 0.2s;
+    }
+
+    /* styling explore drivers */
+    .explore_drivers{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-gap: 25px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .hamilton_card, .carlos_card, .lando_card, .bottas_card{
+        margin-bottom: 0;
+    }
+
+    /* styling team cards */
+    .teams{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 25px;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .team_card{
+        margin: 0;
+    }
+
+    .driver_card h3{
+        font-size: 18px;
+    }
+
+}
+/* Media query for desktop displays */
+@media (min-width:900px) {
+    /* styling skip button */
+    .skip {
+        position: absolute;
+        top:-40px;
+        margin-left: 10px;
+        z-index: 100000;
+    }
+    
+    .skip:focus {
+        top: 10px;
+        transition: 0.2s;
+        z-index: 100000;
+    }   
+    
+    /* stylign header and nav */
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 10px;
+        height: 150px;
+        position: sticky;
+        box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+    }
+    
+    #logo{
+        margin: 0;
+        max-width: 125px;
+    }
+    
+    nav{
+        background-color: #ffffff;
+        padding: 10px 10px 10px 0px;
+        height: 125px;
+    }
+    
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    
+    .nav_links li{
+        padding: 2px 20px 2px 20px;
+    }
+    
+    .nav_links a{
+        font-weight: 700;
+        color: rgb(214, 29, 29);
+        font-size: 18px;
+        text-decoration: none;
+    }
+    
+    .nav_links a:hover{
+        color: rgb(248, 119, 119);
+        transition: 0.2s;
+    }
+    
+    #active{
+        color: rgb(138, 18, 18);
+        text-decoration: underline; 
+        font-weight: 900;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 3px;
+    }
+    
+    main{
+        margin: 5% 15%;
+    }
+    
+    h1{
+        font-size: 35px;
+        font-weight: 900;
+        padding-bottom: 20px;
+    }
+    
+    h2{
+        font-size: 30px;
+        font-weight: 800;   
+        padding-bottom: 15px;
+    }
+    
+    h3{
+        font-size: 25px;
+        font-weight: 800;
+        font-style: italic ;
+        padding-bottom: 15px;
+    }
+    
+    p{
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 10px;
+    }
+    
+    /* styling top banner */
+    .top_p{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    
+    /* stylign team of the week */
+    .top_page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team_week{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        background-color: #ffffff;
+        border-radius: 25px;
+        padding: 20px 10px 10px 10px;
+        margin-bottom: 100px;
+        box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.1);
+        transition: 0.3s;
+    }
+    
+    .team_week:hover{
+        transform: scale(1.01);
+        transition: 0.3s;
+        border: #db3a3a 3px solid;
+    }
+
+    .description p{
+        line-height: 30px;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 20;
+        color: #777777;
+    }
+    
+    /* stlying driver of the week */
+    .driver_week{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        background-color: #ffffff;
+        box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.1);
+        border-radius: 25px;
+        padding: 20px 10px 10px 10px;
+        margin-bottom: 100px;
+        transition: 0.3s;
+    }
+
+    .driver_week img{
+        max-height: 300px;
+    }
+    
+    .driver_week:hover{
+        transform: scale(1.01);
+        transition: 0.3s;
+        border: #2470b8 3px solid;
+    }
+
+    .description{
+        margin: auto;
+    }
+
+    /* styling explore teams */
+    .explore_teams{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-gap: 50px;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .merc_team_card, .redbull_team_card, .mclaren_team_card, .aston_team_card{
+        margin: 0;
+    }
+
+    .explore_teams h2{
+        grid-column: 1 / 3;
+    }
+
+    /* styling "see more teams" button */
+    .explore_teams button{
+        grid-column: 1 / 3;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: #db3a3a;
+        color: #ffffff;
+        height: 50px;
+        width: 300px;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    .explore_teams button:hover{
+        background-color: #f74e4e;
+        transform: scale(1.01);
+        transition: 0.2s;
+    }
+
+    /* styling explore drivers */
+    .explore_drivers{
+        display: grid;
+        grid-template-columns: 22% 22% 22% 22%;
+        grid-gap: 25px;
+        justify-content: center;
+    }
+
+    /* styling team cards */
+    .teams{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 50px;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .team_card{
+        margin: 0;
+    }
+
+    .drivers{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        justify-content: center;
+        grid-gap: 25px;
+        margin: 50px 0;
+    }
+
+}
