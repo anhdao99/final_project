@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Final Project/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Final Project/css/reset.css">
+    <link rel="stylesheet" href="/Final Project/css/style.css">
+    <title>RB</title>
+</head>
+<body>
+    <div><a href="#main" class="skip">Skip to Main Content</a></div>
+    <header id="navbar">
+        <img src="/Final Project/images/logo.png" alt="F1 Who's Who" id="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/Final Project/home.html">Home</a></li>
+                <li><a href="/Final Project/drivers.html">Drivers</a></li>
+                <li><a id="active" href="/Final Project/teams.html">Teams</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="team_name">
+            <h1>RB</h1>
+        </div>
+
+        <div class="team_content">
+            <div class="team_logo">
+                <img src="/Final Project/images/logos/rb.jpg" alt="RB">
+            </div>
+
+            <div class="chassis">
+                <img src="/Final Project/images/cars/rb.jpg" alt="RB">
+            </div>
+
+            <div>
+                <ul class="team_facts">
+                    <li>Full Team Name: Visa Cash App RB Formula One Team</li>
+                    <li>Base: Faenza, Italy</li>
+                    <li>Team Chief: Laurent Mekies</li>
+                    <li>Chassis: VCARB 01</li>
+                    <li>Power Unit: Honda RBPT</li>
+                    <li>First Team Entry: 1985</li>
+                    <li>World Championships: 0</li>
+                    <li>Wins: 2</li>
+                    <li>Pole Positions: 1</li>
+                    <li>Fastest Laps: 3</li>
+                </ul>
+            </div>
+
+            <div class="team_drivers">
+                <div class="driver_card" id="daniel">
+                    <div>
+                        <a href="/Final Project/drivers/daniel.html"><img src="/Final Project/images/drivers/danny.jpg" alt="Daniel Ricciardo"></a>
+                    </div>
+                    <div>
+                        <h3>Daniel Ricciardo</h3>
+                    </div>
+                </div>
+                
+                <div class="driver_card" id="yuki">
+                    <div>
+                        <a href="/Final Project/drivers/yuki.html"><img src="/Final Project/images/drivers/yuki.jpg" alt="Yuki Tsunoda"></a>
+                    </div>
+                    <div>
+                        <h3>Yuki Tsunoda</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team_profile">
+                <h2>Team Profile</h2>
+                <p>Established in 2006 as a squad in which young drivers from Red Bull’s prodigious talent pool could cut their F1 teeth, RB – originally named Toro Rosso and then AlphaTauri – were formed from the ashes of the plucky Minardi team. Sebastian Vettel gave validity to the approach almost immediately, delivering a fairy-tale win in 2008, before going on to enjoy world championship success with parent team Red Bull Racing. Today the ethos of nurturing talent still holds true, though the Italian squad are no longer simply a ‘B team’ but a constructor in their own right...</p>
+
+                <h3>2023</h3>
+                <p>Eventful final campaign under AlphaTauri moniker culminates with P8 in the standings. Newcomer Nyck de Vries dropped mid-season in favour of the experienced Daniel Ricciardo – who then misses five Grands Prix with a broken hand following a practice crash.</p>
+                
+                <h3>2022</h3>
+                <p>Momentum stalls and lose ground to the likes of Alfa Romeo and Haas, dropping to P9 in the final standings, with just 35 points to 2021’s tally of 142. Pierre Gasly takes season’s best result with a fifth place in Baku, but departs the squad at the end of the year.</p>
+
+                <h3>2021</h3>
+                <p>Move up another place to sixth in the standings, as the ever-improving Pierre Gasly scores a podium in Azerbaijan and points in almost every race he finishes. Rookie team mate Yuki Tsunoda takes time to find his feet, but secures an excellent fourth in season finale.</p>
+
+                <h3>2020</h3>
+                <p>A new name brings new impetus and AlphaTauri emerge as a true midfield force, scoring more than a century of points, 27 of them on home soil at Monza, where Pierre Gasly secures his and the team’s maiden win.</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        var lastScrollTop;
+
+        navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll',function(){
+        
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if(scrollTop > lastScrollTop){
+            navbar.style.top='-200px';
+        }
+        
+        else{
+            navbar.style.top='0';
+        }
+        
+        lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+<footer></footer>
+</html>

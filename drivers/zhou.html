@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Final Project/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Final Project/css/reset.css">
+    <link rel="stylesheet" href="/Final Project/css/style.css">
+    <title>Zhou Guanyu</title>
+</head>
+<body>
+    <div><a href="#main" class="skip">Skip to Main Content</a></div>
+    <header id="navbar">
+        <img src="/Final Project/images/logo.png" alt="F1 Who's Who" id="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/Final Project/home.html">Home</a></li>
+                <li><a id="active" href="/Final Project/drivers.html">Drivers</a></li>
+                <li><a href="/Final Project/teams.html">Teams</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="driver_name">
+            <h1>Zhou Guanya</h1>
+        </div>
+
+        <div class="driver_info">
+            <div>
+                <img class="driver_photo" src="/Final Project/images/drivers/zhou.jpg" alt="Zhou Guanyu">
+            </div>
+
+            <div>
+                <ul class="quick_facts">
+                    <li>Team: Kick Sauber</li>
+                    <li>Number: 24</li>
+                    <li>Country: China</li>
+                    <li>Podiums: 0</li>
+                    <li>Wins: 0</li>
+                    <li>Points: 12</li>
+                    <li>Grands Prix entered: 47</li>
+                    <li>World Championships: 0</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bio">
+            <h2>Biography</h2>
+            <p>China had never boasted a Grand Prix starter among its citizens – until Zhou Guanyu changed that state of affairs, after receiving the call-up to make his F1 debut for Alfa Romeo, now Kick Sauber, in 2022.</p>
+
+            <p>The Shanghai-born racer attended his home city’s inaugural Grand Prix in 2004 at the age of five, cheering on his hero Fernando Alonso. But having caught the racing bug, the Chinese driver then set himself the ambitious goal of becoming his country’s first-ever F1 racer – achieving a feat that Ma Qinghua, the only other Chinese driver to take part in a Formula 1 weekend, never managed. </p>
+
+            <p>The Shanghai-born racer attended his home city’s inaugural Grand Prix in 2004 at the age of five, cheering on his hero Fernando Alonso. But having caught the racing bug, the Chinese driver then set himself the ambitious goal of becoming his country’s first-ever F1 racer – achieving a feat that Ma Qinghua, the only other Chinese driver to take part in a Formula 1 weekend, never managed. </p>
+            
+            <p>A move to Renault’s academy for 2019 coincided with his debut in Formula 2, with Zhou building his confidence in the series via multiple wins and pole positions across three seasons, leading to him challenging for the drivers’ title in 2021. </p>
+
+            <p>That was enough to convince Team Principal Fred Vasseur to put his faith in Zhou for 2022 and field him alongside ex-Mercedes racer Valtteri Bottas – allowing Zhou to achieve his dream of racing in F1, and even to see how he fares against his own childhood hero, Fernando Alonso.</p>
+        </div>
+    </main>
+    <script>
+        var lastScrollTop;
+
+        navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll',function(){
+        
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if(scrollTop > lastScrollTop){
+            navbar.style.top='-200px';
+        }
+        
+        else{
+            navbar.style.top='0';
+        }
+        
+        lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+<footer></footer>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Final Project/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Final Project/css/reset.css">
+    <link rel="stylesheet" href="/Final Project/css/style.css">
+    <title>Esteban Ocon</title>
+</head>
+<body>
+    <div><a href="#main" class="skip">Skip to Main Content</a></div>
+    <header id="navbar">
+        <img src="/Final Project/images/logo.png" alt="F1 Who's Who" id="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/Final Project/home.html">Home</a></li>
+                <li><a id="active" href="/Final Project/drivers.html">Drivers</a></li>
+                <li><a href="/Final Project/teams.html">Teams</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="driver_name">
+            <h1>Esteban Ocon</h1>
+        </div>
+
+        <div class="driver_info">
+            <div>
+                <img class="driver_photo" src="/Final Project/images/drivers/ocon.jpg" alt="Esteban Ocon">
+            </div>
+
+            <div>
+                <ul class="quick_facts">
+                    <li>Team: Alpine</li>
+                    <li>Number: 31</li>
+                    <li>Country: France</li>
+                    <li>Podiums: 3</li>
+                    <li>Wins: 1</li>
+                    <li>Points: 422</li>
+                    <li>Grands Prix entered: 136</li>
+                    <li>World Championships: 0</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bio">
+            <h2>Biography</h2>
+            <p>If there’s one word that dominates Esteban Ocon’s career, it’s ‘sacrifice’.</p>
+
+            <p>Back when he was just a promising karter, Ocon’s parents sold their house, put their jobs on hold, and began a life on the road, living in a caravan and travelling from circuit to circuit to support their son’s burgeoning career.</p>
+
+            <p>Sacrifice, see – but it worked. 2014 saw Ocon break through in the world of single-seaters, as he beat a certain Max Verstappen to the European F3 title. Backed by Mercedes, he won the GP3 title the following year and was halfway through a season of DTM in 2016 when he was offered the chance to replace Rio Haryanto at the minnow Manor team from the Belgian Grand Prix onwards.</p>
+            
+            <p>That opportunity led to a full-time seat the following year with Force India, where his wheel-to-wheel duels with highly-rated team mate Sergio Perez quickly marked him out as a rising star. But when Lawrence Stroll, father of racer Lance, stepped in midway through 2018 to secure the squad’s financial future, the writing was on the wall for Ocon, who was moved aside at the end of the year to allow Stroll Jr to join from Williams.</p>
+            
+            <p>Ocon bided his time, though, and after a year on the sidelines as Mercedes’ reserve driver, he found his way back into a race seat for 2020 with Renault, who became Alpine for 2021 – when his wait finally paid off, as he scored his – and the famous French marque’s – first F1 win.</p>
+
+            <p>Nothing in Ocon’s motorsport career has come easy – but if Ocon has managed to return to the F1 grid and step atop the podium, it’s through a combination of self-belief, determination and a talent that’s up there with the very best.</p>
+        </div>
+    </main>
+    <script>
+        var lastScrollTop;
+
+        navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll',function(){
+        
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if(scrollTop > lastScrollTop){
+            navbar.style.top='-200px';
+        }
+        
+        else{
+            navbar.style.top='0';
+        }
+        
+        lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+<footer></footer>
+</html>

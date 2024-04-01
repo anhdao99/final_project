@@ -13,7 +13,7 @@
 </head>
 <body>
     <div><a href="#main" class="skip">Skip to Main Content</a></div>
-    <header>
+    <header id="navbar">
         <img src="/Final Project/images/logo.png" alt="F1 Who's Who" id="logo">
         <nav>
             <ul class="nav_links">
@@ -25,13 +25,64 @@
     </header>
 
     <main id="main">
-        <div class="top_page">
+        <div class="driver_name">
             <h1>Alex Albon</h1>
-            <p class="top_p">Explore the world of Formula 1 with F1 Who's Who! Learn about the drivers, teams, and history of the sport.</p>
         </div>
 
+        <div class="driver_info">
+            <div>
+                <img class="driver_photo" src="/Final Project/images/drivers/albon.jpg" alt="Alex Albon">
+            </div>
+
+            <div>
+                <ul class="quick_facts">
+                    <li>Team: Williams</li>
+                    <li>Number: 23</li>
+                    <li>Country: Thailand</li>
+                    <li>Podiums: 2</li>
+                    <li>Wins: 0</li>
+                    <li>Points: 228</li>
+                    <li>Grands Prix entered: 84</li>
+                    <li>World Championships: 0</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bio">
+            <h2>Biography</h2>
+            <p>Born in London but racing under the flag of Thailand, Alexander Albon’s first word was in fact Italian. That word was Ferrari – though it was with another Italian team that he got his big F1 break.</p>
+
+            <p>Idolising Michael Schumacher and dreaming of one day racing in Formula 1, the junior Albon was pipped to the 2016 GP3 title by a certain Charles Leclerc. He then left his great friendship with George Russell trackside as he took the 2018 Formula 2 title fight down to the wire.</p>
+            
+            <p>Graduating to the F1 big league along with yet another contemporary – Lando Norris – in 2019, Albon did his talking on track with Toro Rosso in the opening races, earning a mid-season promotion to Red Bull Racing.</p>
+            
+            <p>A stylish overtaker with a championship mentality, Albon was unfazed by partnering Max Verstappen for the second half of his rookie season, taking top-six finishes in eight of his nine 2019 races with Red Bull.</p>
+            
+            <p>Staying in touch with the future champion proved tougher in 2020 and Red Bull dropped him from their race line-up. Crucially, though, Albon was retained as test and reserve driver, keeping him very much on team bosses’ radar, leading to his 2022 return to the grid with Williams, where he has established a reputation as a fast qualifier and mature racer.</p>
+            
+            <p>Laidback and cheerful with a cheeky grin, the Thai driver is popular among his peers – not always easy in motorsport’s cauldron of competition – but you don’t succeed in Formula 1 by being popular. Albon’s challenge remains a big one – to make the most of a rare second F1 opportunity.</p>
+        </div>
     </main>
-    
+    <script>
+        var lastScrollTop;
+
+        navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll',function(){
+        
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if(scrollTop > lastScrollTop){
+            navbar.style.top='-200px';
+        }
+        
+        else{
+            navbar.style.top='0';
+        }
+        
+        lastScrollTop = scrollTop;
+        });
+    </script>
 </body>
 <footer></footer>
 </html>

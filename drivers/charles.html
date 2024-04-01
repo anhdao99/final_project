@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Final Project/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Final Project/css/reset.css">
+    <link rel="stylesheet" href="/Final Project/css/style.css">
+    <title>Charles Leclerc</title>
+</head>
+<body>
+    <div><a href="#main" class="skip">Skip to Main Content</a></div>
+    <header id="navbar">
+        <img src="/Final Project/images/logo.png" alt="F1 Who's Who" id="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/Final Project/home.html">Home</a></li>
+                <li><a id="active" href="/Final Project/drivers.html">Drivers</a></li>
+                <li><a href="/Final Project/teams.html">Teams</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="driver_name">
+            <h1>Charles Leclerc</h1>
+        </div>
+
+        <div class="driver_info">
+            <div>
+                <img class="driver_photo" src="/Final Project/images/drivers/charles.jpg" alt="Charles Leclerc">
+            </div>
+
+            <div>
+                <ul class="quick_facts">
+                    <li>Team: Ferrari</li>
+                    <li>Number: 16</li>
+                    <li>Country: Monaco</li>
+                    <li>Podiums: 32</li>
+                    <li>Wins: 5</li>
+                    <li>Points: 1121</li>
+                    <li>Grands Prix entered: 128</li>
+                    <li>World Championships: 0</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bio">
+            <h2>Biography</h2>
+            <p>Born in the Mediterranean idyll of Monaco and given the nickname "Il Predestinato" (meaning "The Chosen One") by his adoring fans, Leclerc arrived in F1 on a tidal wave of expectation. </p>
+
+            <p>Practically peerless on his way to the GP3 and Formula 2 crowns, he showcased a dazzling array of skills from scorching pole positions, commanding victories – even when his car caught fire twice at Silverstone – to an ability to muscle his way through the pack. Winning back-to-back championships also taught Leclerc how to handle pressure, another useful tool in the big pond of Formula 1 racing.</p>
+            
+            <p>Stepping up to F1 in 2018, Leclerc showed flashes of ballistic pace on Saturdays and racing brilliance on Sundays, dragging his Sauber beyond its limits – and earning himself a money-can’t-buy race seat at Ferrari for 2019, stepping into the shoes of the Scuderia’s last world champion, Kimi Raikkonen. </p>
+            
+            <p>There he immediately put the cat among the proverbial pigeons, unafraid to go wheel-to-wheel with established number one, Sebastian Vettel. A maiden F1 victory at Spa was followed by another a week later on Ferrari’s hallowed home turf of Monza. The tifosi had found another new hero – who then became the first man to out-score Vettel over a season with the Scuderia, a feat he repeated in crushing fashion the following year.</p>
+            
+            <p>The 2020 and ’21 seasons bore little fruit for Ferrari, but Leclerc maintained his resolve to emerge a true title contender in 2022. With three wins, 11 podiums and nine pole positions, he was the only man able to consistently take the fight to champion Max Verstappen - a feat he and the Scuderia were sadly unable to repeat in 2023.</p>
+
+            <p>Out of the car, Leclerc is modest and thoughtful - but then he is on his own very personal mission. This exciting young talent is racing for his late father Herve and his friend and mentor Jules Bianchi, the F1 driver who died in 2015. </p>
+
+            <p>On the evidence so far, he is doing them both proud.</p>
+        </div>
+    </main>
+    <script>
+        var lastScrollTop;
+
+        navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll',function(){
+        
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if(scrollTop > lastScrollTop){
+            navbar.style.top='-200px';
+        }
+        
+        else{
+            navbar.style.top='0';
+        }
+        
+        lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+<footer></footer>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Final Project/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Final Project/css/reset.css">
+    <link rel="stylesheet" href="/Final Project/css/style.css">
+    <title>Carlos Sainz</title>
+</head>
+<body>
+    <div><a href="#main" class="skip">Skip to Main Content</a></div>
+    <header id="navbar">
+        <img src="/Final Project/images/logo.png" alt="F1 Who's Who" id="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/Final Project/home.html">Home</a></li>
+                <li><a id="active" href="/Final Project/drivers.html">Drivers</a></li>
+                <li><a href="/Final Project/teams.html">Teams</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="driver_name">
+            <h1>Carlos Sainz</h1>
+        </div>
+
+        <div class="driver_info">
+            <div>
+                <img class="driver_photo" src="/Final Project/images/drivers/carlos.jpg" alt="Carlos Sainz">
+            </div>
+
+            <div>
+                <ul class="quick_facts">
+                    <li>Team: Ferrari</li>
+                    <li>Number: 55</li>
+                    <li>Country: Spain</li>
+                    <li>Podiums: 20</li>
+                    <li>Wins: 3</li>
+                    <li>Points: 1022.5</li>
+                    <li>Grands Prix entered: 187</li>
+                    <li>World Championships: 0</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bio">
+            <h2>Biography</h2>
+            <p>He’s the matador from Madrid racing royalty. A smoooooth operator in the cockpit.</p>
+
+            <p>After entering F1’s Bull Ring paired alongside Max Verstappen at Toro Rosso in 2015, Sainz quickly showed his fighting spirit. A tenacious racer, he puts the car on the edge as he hustles his way through the pack. No wonder Sainz has earned the nickname Chilli.</p>
+            
+            <p>But the Spaniard is intelligent as well as instinctive, thinking his way through a race and into the points. This calm temperament follows him off track where he remains unfazed by the pressures of forging a Grand Prix career with a famous name. </p>
+            
+            <p>Sainz is the son of double World Rally champion, also his namesake, and has brought some of Dad’s driving skills to the F1 circuit – junior loves a delicious dose of drift for one.</p>
+            
+            <p>After following in his famous father’s tyre tracks, Sainz has had big racing boots to fill – first at McLaren where he replaced his childhood hero Fernando Alonso, and now at Ferrari, in the seat formerly owned by Sebastian Vettel. </p>
+
+            <p>It is never easy living in the shadow of sporting giants, but Sainz has shown the drive and disposition to deal with it - he has scored a Grand Prix victory in all 3 of his Scuderia seasons to date. Vamos!</p>
+        </div>
+    </main>
+    <script>
+        var lastScrollTop;
+
+        navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll',function(){
+        
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if(scrollTop > lastScrollTop){
+            navbar.style.top='-200px';
+        }
+        
+        else{
+            navbar.style.top='0';
+        }
+        
+        lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+<footer></footer>
+</html>

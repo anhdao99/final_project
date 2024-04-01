@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Final Project/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Final Project/css/reset.css">
+    <link rel="stylesheet" href="/Final Project/css/style.css">
+    <title>Ferrari</title>
+</head>
+<body>
+    <div><a href="#main" class="skip">Skip to Main Content</a></div>
+    <header id="navbar">
+        <img src="/Final Project/images/logo.png" alt="F1 Who's Who" id="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/Final Project/home.html">Home</a></li>
+                <li><a href="/Final Project/drivers.html">Drivers</a></li>
+                <li><a id="active" href="/Final Project/teams.html">Teams</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="team_name">
+            <h1>Ferrari</h1>
+        </div>
+
+        <div class="team_content">
+            <div class="team_logo">
+                <img src="/Final Project/images/logos/ferrari.jpg" alt="Ferrari">
+            </div>
+
+            <div class="chassis">
+                <img src="/Final Project/images/cars/ferrari.jpg" alt="Ferrari">
+            </div>
+
+            <div>
+                <ul class="team_facts">
+                    <li>Full Team Name: Scuderia Ferrari</li>
+                    <li>Base: Maranello, Italy</li>
+                    <li>Team Chief: Frédéric Vasseur</li>
+                    <li>Chassis: SF-24</li>
+                    <li>Power Unit: Ferrari</li>
+                    <li>First Team Entry: 1950</li>
+                    <li>World Championships: 16</li>
+                    <li>Wins: 245</li>
+                    <li>Pole Positions: 249</li>
+                    <li>Fastest Laps: 261</li>
+                </ul>
+            </div>
+
+            <div class="team_drivers">
+                <div class="driver_card" id="carlos">
+                    <div>
+                        <a href="/Final Project/drivers/carlos.html"><img src="/Final Project/images/drivers/carlos.jpg" alt="Carlos Sainz"></a>
+                    </div>
+                    <div>
+                        <h3>Carlos Sainz</h3>
+                    </div>
+                </div>
+    
+                <div class="driver_card" id="charles">
+                    <div>
+                        <a href="/Final Project/drivers/charles.html"><img src="/Final Project/images/drivers/charles.jpg" alt="Charles Leclerc"></a>
+                    </div>
+                    <div>
+                        <h3>Charles Leclerc</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team_profile">
+                <h2>Team Profile</h2>
+                <p>For many, Ferrari and Formula 1 racing have become inseparable. The only team to have competed in every season since the world championship began, the Prancing Horse has grown from the humble dream of founder Enzo Ferrari to become one of the most iconic and recognised brands in the world. Success came quickly through the likes of Alberto Ascari and John Surtees, and continued – in amongst leaner times – with Niki Lauda in the 1970s and then Michael Schumacher in the 2000s, when Ferrari claimed a then unprecedented five consecutive title doubles, securing their status as the most successful and decorated team in F1 history...</p>
+
+                <h3>2023</h3>
+                <p>Only team other than Red Bull to win a race – Carlos Sainz in Singapore – but an otherwise frustrating campaign of mixed fortunes sees team narrowly lose out to Mercedes for P2 in the constructors’ table, despite six pole positions and nine podiums.</p>
+                
+                <h3>2022</h3>
+                <p>Head title race early season, with Charles Leclerc winning two of the three opening races. However, mix of driver error, reliability issues and strategy missteps ultimately consign them to distant runners-up spot behind Red Bull. Carlos Sainz scores first career win, at Silverstone.</p>
+
+                <h3>2021</h3>
+                <p>Still no sign of a title challenge, but strong year-on-year improvement lifts them clear of McLaren for P3 overall, with more than double their 2020 points tally. New arrival Carlos Sainz outscores Charles Leclerc, the Spaniard taking four podiums to his team mate’s one.</p>
+
+                <h3>2020</h3>
+                <p>Sink to their worst performance in four decades, failing to win a race, scoring just three podiums and falling to sixth in the standings. Sebastian Vettel is told early on that his contract will not be renewed for 2021, and it’s Charles Leclerc who secures 98 of the team’s 131 points.</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        var lastScrollTop;
+
+        navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll',function(){
+        
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if(scrollTop > lastScrollTop){
+            navbar.style.top='-200px';
+        }
+        
+        else{
+            navbar.style.top='0';
+        }
+        
+        lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+<footer></footer>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/Final Project/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Final Project/css/reset.css">
+    <link rel="stylesheet" href="/Final Project/css/style.css">
+    <title>Mercedes</title>
+</head>
+<body>
+    <div><a href="#main" class="skip">Skip to Main Content</a></div>
+    <header id="navbar">
+        <img src="/Final Project/images/logo.png" alt="F1 Who's Who" id="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="/Final Project/home.html">Home</a></li>
+                <li><a href="/Final Project/drivers.html">Drivers</a></li>
+                <li><a id="active" href="/Final Project/teams.html">Teams</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <div class="team_name">
+            <h1>Mercedes</h1>
+        </div>
+
+        <div class="team_content">
+            <div class="team_logo">
+                <img src="/Final Project/images/logos/mercedes.jpg" alt="Mercedes">
+            </div>
+
+            <div class="chassis">
+                <img src="/Final Project/images/cars/mercedes.jpg" alt="Mercedes">
+            </div>
+
+            <div>
+                <ul class="team_facts">
+                    <li>Full Team Name: Mercedes-AMG PETRONAS F1 Team</li>
+                    <li>Base: Brackley, United Kingdom</li>
+                    <li>Team Chief: Toto Wolff</li>
+                    <li>Chassis: W15</li>
+                    <li>Power Unit: Mercedes</li>
+                    <li>First Team Entry: 1970</li>
+                    <li>World Championships: 8</li>
+                    <li>Wins: 116</li>
+                    <li>Pole Positions: 129</li>
+                    <li>Fastest Laps: 96</li>
+                </ul>
+            </div>
+
+            <div class="team_drivers">
+                <div class="driver_card" id="hamilton">
+                    <div>
+                        <a href="/Final Project/drivers/lewis.html"><img src="/Final Project/images/drivers/lewis.jpg" alt="Lewis Hamilton"></a>
+                    </div>
+                    <div>
+                        <h3>Lewis Hamilton</h3>
+                    </div>
+                </div>
+    
+                <div class="driver_card" id="george">
+                    <div>
+                        <a href="/Final Project/drivers/george.html"><img src="/Final Project/images/drivers/george.jpg" alt="George Russell"></a>
+                    </div>
+                    <div>
+                        <h3>George Russell</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="team_profile">
+                <h2>Team Profile</h2>
+                <p>Mercedes’ modern F1 revival started with the creation of a works squad for 2010 - the platform for a meteoric rise up the Grand Prix order. The team generated huge excitement from the off with the sensational return of Michael Schumacher, but headlines soon followed on track: three podiums in their debut season, all via Nico Rosberg - who then claimed a breakthrough pole/victory double at China in 2012. The following season he was paired with Lewis Hamilton, the duo going on to stage some epic title battles as the Silver Arrows swept all before them to become one of the most dominant forces of the modern F1 era – until Red Bull came and stole that crown. Nevertheless, with Hamilton now partnered by proven race-winner George Russell, Mercedes remain very much one of the teams to beat…</p>
+
+                <h3>2023</h3>
+                <p>Fail to win a Grand Prix for the first time since 2011, as W14 proves little better than its predecessor. Nevertheless, relentless development ultimately sees the team clinch second in the standings over Ferrari at the season’s final round.</p>
+                
+                <h3>2022</h3>
+                <p>Radical rule changes shake up the order and Mercedes’ W13 lands wide of the mark, leaving them ‘best of the rest’ behind Red Bull and Ferrari. Newcomer George Russell takes their sole victory – and outscores Lewis Hamilton, who goes winless for the first time in his F1 career.</p>
+
+                <h3>2021</h3>
+                <p>Face the biggest challenge yet to their dominance of the turbo-hybrid. Lewis Hamilton loses his drivers’ crown to Red Bull’s Max Verstappen, despite winning eight races, as the team just about hang on to the constructors’ title, which they retain for an eighth successive season.</p>
+
+                <h3>2020</h3>
+                <p>Just when you think they can’t get any better, Mercedes – and in particular Lewis Hamilton – step it up another gear. The reigning champion wins 11 races and smashes records galore en route to a Schumacher-equalling seventh drivers' title, despite missing a round with Covid-19. Add two wins for Valtteri Bottas and it’s another dominant double crown for the Silver Arrows.</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        var lastScrollTop;
+
+        navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll',function(){
+        
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        if(scrollTop > lastScrollTop){
+            navbar.style.top='-200px';
+        }
+        
+        else{
+            navbar.style.top='0';
+        }
+        
+        lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+<footer></footer>
+</html>
